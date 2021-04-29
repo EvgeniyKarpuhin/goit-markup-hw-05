@@ -417,13 +417,51 @@ ul {
 }
 
 .box-card-shadow {
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .box-card-shadow:hover,
 .box-card-shadow:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.box-card-shadow:hover .box-card-position {
+    opacity: 0.9;
+    transform: translateY(0);
+}
+
+.shadow-opacity {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.box-card-position {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(100%);
+    transition-property: transform, opacity;
+    transition-duration: 250ms;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+}
+
+.box-card-position p {
+    text-align: start;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: white;
 }
 
 .wrap-box li {
