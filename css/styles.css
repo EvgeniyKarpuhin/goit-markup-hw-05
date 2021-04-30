@@ -128,6 +128,10 @@ ul {
     letter-spacing: 0.02em;
     position: relative;
     padding-bottom: 31px;
+    color: #2196F3;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-website-link::after {
