@@ -129,9 +129,6 @@ ul {
     position: relative;
     padding-bottom: 31px;
     color: #2196F3;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-website-link::after {
@@ -151,6 +148,9 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     position: relative;   
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -186,6 +186,9 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-icon {
@@ -240,17 +243,19 @@ ul {
     height: 44px;
     width: 44px;
     color: #AFB1B8;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.soc-icons {
-    fill: currentColor;
-}
-
 
 .social-size:hover,
 .social-size:focus {
     color: white;
     background-color: #2196F3
+}
+
+.soc-icons {
+    fill: currentColor;
 }
 
 .btn {
@@ -399,6 +404,9 @@ ul {
     letter-spacing: 0.03em;
     color: #212121;
     padding: 6px 22px;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -518,6 +526,9 @@ ul {
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -611,6 +622,9 @@ ul {
     border-radius: 50%;
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-size-footer:hover,
